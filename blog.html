@@ -215,9 +215,67 @@
 
     @media (max-width: 850px) {
 
-        .list {
-            display: none;
-        }
+           .list{
+     
+         position: absolute;
+         top: 100%;
+         flex-direction: column;
+         text-align: center;
+         right: 0;
+          left: 0;
+         background-color: black;
+         opacity: 0;
+         transition: 0.4s;
+      }
+          .list::after{
+         content: "x";
+         height: 3px;
+         position: absolute;
+          left: 0;
+         font-size:22px;
+         color: #fff;
+         font-weight: 600;
+         cursor: pointer;
+         width: 100%;
+         border-radius: 30px;
+         color: #00c9c0;
+         
+   
+      }
+
+      
+      .active{
+            opacity: 1;
+               
+      }
+      
+      .list a{
+        display: block;
+        padding: 1.2rem;
+        margin: 1.2rem;
+        /* border-bottom: 2px solid #ffff; */
+        color: #fff;
+      
+      }
+      .list a:hover
+      {
+         background-color: red;
+      }
+  
+  
+
+      .hard{
+         display: block;
+         background-color: #Ffff;
+         padding: 0px 10px;
+         border-radius: 20px;
+        
+      }
+      .hars
+      {
+         display: inline-block;
+      }
+   
 
         .icon {
             display: none;
@@ -436,9 +494,11 @@ header h2 {
 <body>
     <header>
         <nav>
-            <div class="logo">
-                <a href="" class="gertye"><img src="https://o.remove.bg/downloads/3740359e-10cc-4222-b3be-d5ba3f85b3a4/harish_chauhan-removebg-preview.png" alt="" width="100px"></a>
-            </div>
+         <a href="" class="gertye"><img src="images/harish chauhan.png" alt="" width="100px"></a>
+        <div class="hard" id="hello">
+            <img src="images/menu bar.png" alt="" class="hars">
+
+        </div>
             <ul class="list">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
