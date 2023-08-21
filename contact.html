@@ -186,10 +186,55 @@ width: 100%;
     }
     
     @media (max-width: 850px) {
-        .list
-        {
-            display: none;
-        }
+       .list::after{
+         content: "x";
+         height: 3px;
+         position: absolute;
+          left: 0;
+         font-size:22px;
+         color: #fff;
+         font-weight: 600;
+         cursor: pointer;
+         width: 100%;
+         border-radius: 30px;
+         color: #00c9c0;
+         
+   
+      }
+
+      
+      .active{
+            opacity: 1;
+               
+      }
+      
+      .list a{
+        display: block;
+        padding: 1.2rem;
+        margin: 1.2rem;
+        /* border-bottom: 2px solid #ffff; */
+        color: #fff;
+      
+      }
+      .list a:hover
+      {
+         background-color: red;
+      }
+  
+  
+
+      .hard{
+         display: block;
+         background-color: #Ffff;
+         padding: 0px 10px;
+         border-radius: 20px;
+        
+      }
+      .hars
+      {
+         display: inline-block;
+      }
+   
         .sec-2333 h1{
             font-size: 2rem;
         }
@@ -484,11 +529,12 @@ header h2 {
 <body>
     <header>
         <nav>
-            <div class="logo">
-                    <a href="" class="gertye"><img src="images/harish chauhan.png" alt="" width="100px"></a>
+           
+        <a href="" class="gertye"><img src="images/harish chauhan.png" alt="" width="100px"></a>
+        <div class="hard" id="hello">
+            <img src="images/menu bar.png" alt="" class="hars">
 
-
-            </div>
+        </div>
             <ul class="list">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
