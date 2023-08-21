@@ -169,24 +169,12 @@
             flex-wrap: wrap;
 
         }
-
-        /* .center-300 
-    {
-        width: 100%;
-        flex-direction: column;
-    } */
-
-
-    @media (max-width: 720px) {
-        .sector
-        {
-            flex-direction: column;
-        }
-             .gertye img
+        .gertye img
         {
           width: 70px;
         }
-            .list{
+        
+        .list{
      
      position: absolute;
      top: 100%;
@@ -242,6 +230,19 @@
          background-color: red;
       }
   
+
+        /* .center-300 
+    {
+        width: 100%;
+        flex-direction: column;
+    } */
+
+
+    @media (max-width: 720px) {
+        .sector
+        {
+            flex-direction: column;
+        }
         
     }
     }
@@ -508,13 +509,13 @@ header h2 {
 <body>
     <header>
         <nav>
-            
-     <a href="" class="gertye"><img src="images/harish chauhan.png" alt="" width="100px"></a>
-        <div class="hard" id="hello">
-            <img src="images/menu bar.png" alt="" class="hars">
-
-        </div>
-       
+            <div class="logo">
+                <a href="" class="gertye"><img src="images/harish chauhan.png" alt="" width="100px"></a>
+            </div>
+            <div class="hard" id="hello">
+                <img src="images/menu bar.png" alt="" class="hars">
+    
+            </div>
             <ul class="list">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -637,7 +638,26 @@ header h2 {
         <script src="script.js" defer></script>
       </head>
       <body>
-     
+        <button class="chatbot-toggler">
+          <span class="material-symbols-rounded">mode_comment</span>
+          <span class="material-symbols-outlined">close</span>
+        </button>
+        <div class="chatbot">
+          <header>
+            <h2>Chatbot</h2>
+            <span class="close-btn material-symbols-outlined">close</span>
+          </header>
+          <ul class="chatbox">
+            <li class="chat incoming">
+              <span class="material-symbols-outlined">smart_toy</span>
+              <p>Hi there 👋<br>How can I help you today?</p>
+            </li>
+          </ul>
+          <div class="chat-input">
+            <textarea placeholder="Enter a message..." spellcheck="false" required></textarea>
+            <span id="send-btn" class="material-symbols-rounded">send</span>
+          </div>
+        </div>
     
       </body>
     </html>
@@ -754,29 +774,16 @@ closeBtn.addEventListener("click", () => document.body.classList.remove("show-ch
 chatbotToggler.addEventListener("click", () => document.body.classList.toggle("show-chatbot"));
 
   
+
   
 
-        let menu = document.querySelector(".hars");
+
+let menu = document.querySelector(".hars");
         let list = document.querySelector(".list");
 
         menu.addEventListener("click", function () {
-            list.classList.toggle("active");
-
-
-
-
+            list.classList.toggle("active")
         })
-
-
-        
-        sr.reveal('.sec', { delay: 350, origin: 'bottom' })
-        sr.reveal('.img-right', { delay: 350, origin: 'bottom' })
-        sr.reveal('.pro-122,.swiper mySwiper,.mango,.mang0-1,.about,.hello-1,.ride,.center-1,.row-1,.text,.text-1,.home conateiner,.sec,.progress-1', { delay: 350, origin: 'top' })
-        sr.reveal('h1,p', { delay: 350, origin: 'bottom' })
-        sr.reveal('h3,h2', { delay: 350, origin: 'bottom' })
-        sr.reveal('.shikahar', { delay: 350, origin: 'left' })
-        sr.reveal('.foooter', { delay: 350, origin: 'left' })
-
 
 
 
