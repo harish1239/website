@@ -768,6 +768,26 @@ chatInput.addEventListener("keydown", (e) => {
 sendChatBtn.addEventListener("click", handleChat);
 closeBtn.addEventListener("click", () => document.body.classList.remove("show-chatbot"));
 chatbotToggler.addEventListener("click", () => document.body.classList.toggle("show-chatbot"));
+    sr.reveal('.sec', { delay: 350, origin: 'bottom' })
+        sr.reveal('.img-right', { delay: 350, origin: 'bottom' })
+        sr.reveal('.pro-122,.swiper mySwiper,.mango,.mang0-1,.about,.hello-1,.ride,.center-1,.row-1,.text,.text-1,.home conateiner,.sec,.progress-1', { delay: 350, origin: 'top' })
+        sr.reveal('h1,p', { delay: 350, origin: 'bottom' })
+        sr.reveal('h3,h2', { delay: 350, origin: 'bottom' })
+        sr.reveal('.shikahar', { delay: 350, origin: 'left' })
+        sr.reveal('.foooter', { delay: 350, origin: 'left' })
+
+
+
+       let menu = document.querySelector(".hars");
+        let list = document.querySelector(".list");
+
+        menu.addEventListener("click", function () {
+            list.classList.toggle("active");
+
+
+
+
+        })
 
   
 
