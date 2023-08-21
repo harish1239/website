@@ -4,6 +4,22 @@
    box-sizing: border-box;
    text-decoration: none;
 }
+.Helvetica
+
+{
+   background-image: url(images/web.png);
+   background-repeat: no-repeat;
+   animation: harry 10s linear infinite;
+}
+@keyframes harry{
+   50%{
+      background-image: url(images/remove\ man\ images.png);
+
+   }
+   
+  
+}
+
 
 ::-webkit-scrollbar
 {
